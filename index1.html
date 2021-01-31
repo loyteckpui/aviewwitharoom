@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>A View with A Room </title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+
+
+.containerA {
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+
+	left:0px;
+	top: 50px;
+	width: 500px;
+	background-color: #00FF00; <!-- greend background -->
+}
+
+.overlayA {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+
+		background-color: #FF0000; <!-- red background -->
+}
+
+.containerA:hover .overlayA {
+	opacity: 1;
+	
+}
+
+
+.imageA {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 500px;
+  height: auto;
+}
+
+
+
+</style>
+
+
+</head>
+
+<body>
+
+	<div class="containerA">
+			<img src="assets/images/001a_suitcase_closed.jpg" alt="Case closed" width="500" >
+					
+			<div class="overlayA">
+				<a href="001_content.html">
+					<img src="assets/images/001b_suitcase_opened.jpg" alt="Case opened" width="500" >
+				</a>
+			</div>
+	</div>
+</>
+
+</body>
+
+

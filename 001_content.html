@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<head>
+<title>A View with A Room</title>
+
+<style>
+
+.containerB {
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+
+	left:0px;
+	top: 50px;
+	width: 800px;
+	<!-- background-color: #008000; -->
+}
+
+
+.hotspot {
+    position: absolute;
+    <!--border: 1px solid blue;-->
+}
+
+.overlay {
+  position: absolute;
+  opacity: 0;
+  transition: 0.5s ease;
+
+}
+
+.hotspot:hover .overlay {
+    opacity: 1;
+}
+
+
+</style>
+
+
+
+</head>
+
+
+<body>
+
+	<div class="containerB">
+
+		<!-- <img src="assets/images/010_room_entry.jpg" alt="room" width=800" usemap="#room_map"> 
+
+		<map name=room_map>
+
+			<area shape="rect"   coords="270,60,520,380" alt="wardrobe" href="assets/images/001f002_wardrobe_ajar.jpg" >
+			<area shape="rect"   coords="125,90,210,230" alt="calendar" href="assets/images/002a_calendar_may1968.jpg" >
+			<area shape="circle" coords="630,90,35"      alt="clock"    href="assets/images/001c011_clock_spin.gif"    >
+
+		</map>	
+		-->
+
+		<img src="assets/images/010_room_entry.jpg" alt="room" width=800">				
+		<div class="hotspot" style="top: 40px; left: 270px; height: 360px; width: 250px;">
+
+
+			<div class="overlay">
+					<a href="021_wardrobe_peephole.html">
+						<img src="assets/images/001f011_wardrobe_opening.gif" alt="Wardrobe opening" width="255">
+					</a>
+			</div>					
+		</div>
+
+
+		
+		
+		
+		<div class="hotspot" style="top: 90px; left: 120px; height: 150px; width: 100px;">
+
+
+			<div class="overlay">
+					<a href="031_archive_content.html">
+						<img src="assets/images/001d011_calendar_flipping.gif" alt="Calender flipping" width="105">
+					</a>
+			</div>					
+		</div>
+
+
+		<div class="hotspot" style="top: 55px; left: 595px; height: 70px; width: 70px;">
+
+
+			<div class="overlay">
+					<a href="041_bio.html">
+						<img src="assets/images/001c011_clock_spin.gif" alt="Clock spinning" width="72">
+					</a>
+			</div>					
+		</div>
+
+
+	</div>
+
+
+
+</body>
+
